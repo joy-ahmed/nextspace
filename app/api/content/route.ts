@@ -1,3 +1,4 @@
+import { getServerSession } from "next-auth"
 import { NextResponse } from "next/server"
 
 
@@ -56,5 +57,7 @@ const posts = [
   
 
 export async function GET() {
-      return await NextResponse.json(posts)
+
+  const session = await getServerSession();
+  return await NextResponse.json(posts)
 }

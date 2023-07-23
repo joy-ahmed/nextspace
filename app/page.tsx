@@ -8,7 +8,7 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main
-      className={`${poppins.className} flex h-screen justify-center items-center font-medium`}
+      className={`${poppins.className} flex justify-center items-center font-medium`}
     ></main>
   );
 }

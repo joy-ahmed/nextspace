@@ -1,3 +1,4 @@
+import { SignInButton } from "@/components/buttons";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,7 +12,7 @@ const NavMenu = () => {
             <Image src="/logo.svg" alt="logo" width={150} height={80} />
           </Link>
         </nav>
-        <ul className="flex gap-5">
+        <ul className="flex gap-5 items-center">
           <li>
             <Link href="/about">About</Link>
           </li>
@@ -20,6 +21,9 @@ const NavMenu = () => {
           </li>
           <li>
             <Link href="/users">Users</Link>
+          </li>
+          <li>
+            <SignInButton />
           </li>
         </ul>
       </div>
